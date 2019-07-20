@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="{{ static_url("./html5.css") }}">
+	</head>
+	<body>
+		<div class="login-page" style="width: 80%; text-align: left;">
+			<div class="form" style="max-width: 100%; text-align: left; margin-left: 0px; margin-right: 0px;">
+				<ul>
+					{% for m in history %}
+						<li>{{m['user_id']}}: {{m['mesg']}} ({{m['time']}}) ({{m['ip']}})</li>
+					{% end %}
+				</ul>
+				<form action='/admin' method='post'>
+					<input name='cmd' type="text" placeholder="Action">
+					<input type='submit'>
+				</form>
+				<hr>
+				<form class="login-form" action='/admin_logout' method='post'>
+					<input name='user_id' readonly value='{{user_id}}'>
+					<input type='submit' value="Leave and Logout">
+				</form>
+			</div>
+		</div>
+	</body>
+</html>

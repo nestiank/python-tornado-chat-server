@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="{{ static_url("./html5.css") }}">
+	</head>
+	<body>
+		<div class="login-page" style="width: 80%; text-align: left;">
+			<div class="form" style="max-width: 100%; text-align: left; margin-left: 0px; margin-right: 0px;">
+				<ul>
+					{% for m in history %}
+						<li>{{m['user_id']}}: {{m['mesg']}} ({{m['time']}}) ({{m['ip']}})</li>
+					{% end %}
+				</ul>
+				<form class="login-form" action='/talk' method='post'>
+					<input name='user_id' type="text" readonly value='{{user_id}}'>
+					<input name='mesg' type="text" readonly value="(System) {{user_id}} joined conversation.">
+					<input type='submit' value="Join">
+				</form>
+			</div>
+		</div>
+	</body>
+</html>

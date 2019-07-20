@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="{{ static_url("html5.css") }}">
+	</head>
+	<body>
+		<div class="login-page">
+			<h1 style="color: white;">Let's talk</h1>
+			<p style="color: white;">Joo-young Kim (#2017320110)</p>
+			<br>
+			<div class="form">
+			    <form class="login-form" action="/join" method="post">
+			        <input type="text" placeholder="ID" name="user_id">
+			        <br>
+			        <input type="text" placeholder="PW" name="user_pw">
+			    	<input type="submit" value="Login">
+			    </form>
+			    <p class="message">Not registered? <a href="/register">Create an account</a></p>
+			    <p class="message">For admin, <a href="/admin">visit admin page</a></p>
+			</div>
+		</div>
+	</body>
+</html>

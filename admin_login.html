@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="{{ static_url("./html5.css") }}">
+	</head>
+	<body>
+		<div class="login-page">
+			<h1 style="color: white;">Admin Login</h1>
+			<p style="color: white;">Joo-young Kim (#2017320110)</p>
+			<br>
+			<div class="form">
+			    <form class="login-form" action="/admin_login" method="post">
+			        <input type="text" placeholder="ID" name="user_id">
+			        <br>
+			        <input type="password" placeholder="PW" name="user_pw">
+			    	<input type="submit" value="Login">
+			    </form>
+			</div>
+		</div>
+	</body>
+</html>
