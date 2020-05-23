@@ -67,24 +67,24 @@ class TalkHandler(RequestHandler):
 class AdminLoginHandler(RequestHandler):
     def post(self):
         global session
-        admin_info = {'user_id': "keist99", 'user_pw': "pyprj"}
+        admin_info = {'user_id': "admin_id", 'user_pw': "pyprj"}
         user_id = self.get_body_argument('user_id')
         user_pw = self.get_body_argument('user_pw')
         if {'user_id': user_id, 'user_pw': user_pw} == admin_info:
             session.append(admin_info)
-            self.render('admin.html', history=history, user_id="keist99")
+            self.render('admin.html', history=history, user_id="admin_id")
         else:
             self.render('error_adminlogin.html')
 
 class AdminHandler(RequestHandler):
     def get(self):
-        admin_info = {'user_id': "keist99", 'user_pw': "pyprj"}
+        admin_info = {'user_id': "admin_id", 'user_pw': "pyprj"}
         if admin_info in session:
-            self.render('admin.html', history=history, user_id="keist99")
+            self.render('admin.html', history=history, user_id="admin_id")
         else:
             self.render('admin_login.html')
     def post(self):
-        admin_info = {'user_id': "keist99", 'user_pw': "pyprj"}
+        admin_info = {'user_id': "admin_id", 'user_pw': "pyprj"}
         if admin_info in session:
             global history
             cmd = self.get_body_argument('cmd')
@@ -96,7 +96,7 @@ class AdminHandler(RequestHandler):
                 f = open('talk.hist', 'rb')
                 history = pickle.load(f)
                 f.close()
-            self.render('admin.html', history=history, user_id="keist99")
+            self.render('admin.html', history=history, user_id="admin_id")
         else:
             self.render('admin_login.html')
 
