@@ -1,6 +1,9 @@
 # 관리 기능이 있는 간단한 채팅 서버
 
 ![Language][language-python]
+<br>
+![Participants][participants-solo]
+<br>
 [![School Project][korea-university-image]][korea-university-cs-url]
 ![Course][course-cose156]
 ![Grade][grade-b+]
@@ -25,3 +28,4 @@
 [course-cose156]: https://img.shields.io/badge/Course-Python%20Programming%20for%20Everybody-brightgreen
 [language-python]: https://img.shields.io/badge/Language-Python-orange
 [grade-b+]: https://img.shields.io/badge/Grade-B%2B-yellow
+[participants-solo]: https://img.shields.io/badge/Participants-Solo%20Project-7aa3cc
