@@ -12,7 +12,7 @@
 
 ## 스크린샷
 
-(준비 중)
+<img src="documents/screenshot.png" height="400px">
 
 ## 라이선스 및 공동체 수정
 
