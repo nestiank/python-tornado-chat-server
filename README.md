@@ -1,4 +1,4 @@
-# 관리 기능이 있는 간단한 채팅 서버
+# 관리 기능이 있는 회원제 채팅 서버
 
 ![Language][language-python]
 <br>
