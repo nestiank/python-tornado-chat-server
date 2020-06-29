@@ -1,12 +1,12 @@
 # 관리 기능이 있는 회원제 채팅 서버
 
-![Language][language-python]
+![language-python][language-python]
 <br>
-![Participants][participants-solo]
+![participants-solo][participants-solo]
 <br>
-[![School Project][korea-university-image]][korea-university-cs-url]
-![Course][course-cose156]
-![Grade][grade-b+]
+[![institution-korea-university][korea-university-image]][korea-university-cs-url]
+![course-python-programmig-for-everybody][course-cose156]
+![grade-b+][grade-b+]
 
 > 여러 사용자가 접속할 수 있고 관리자는 채팅 로그를 관리할 수 있는 간단한 채팅 서버입니다.
 
