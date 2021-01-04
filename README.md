@@ -39,5 +39,5 @@
 [korea-university-cs-url]: http://cs.korea.ac.kr
 [course-cose156]: https://img.shields.io/badge/Course-Python%20Programming%20for%20Everybody-brightgreen
 [language-python]: https://img.shields.io/badge/Language-Python-orange
-[grade-b+]: https://img.shields.io/badge/Grade-B%2B-yellow
+[grade-b+]: https://img.shields.io/badge/Grade-B+-yellow
 [participants-solo]: https://img.shields.io/badge/Participants-Solo%20Project-7aa3cc
